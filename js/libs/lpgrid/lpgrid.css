@@ -1,0 +1,153 @@
+#ruleXWrap {
+    margin: 0 auto 0 auto;
+}
+
+.ruleOn #ruleXWrap {
+    margin-bottom: -14px;
+}
+
+.ruleInfo {
+    position: fixed;
+    z-index: 99999999;
+}
+.ruleSliders {
+    width: 100%;
+    height: 100%;
+}
+#ruleY .ruleSliders {
+    position: absolute;
+    top: 0;
+}
+
+#ruleY {
+    width: 14px;
+    background: #999;
+    position: fixed;
+    margin-top: 0px;
+    margin-left: 9px;
+    z-index: 3;
+}
+#ruleY .ruleSegment span {
+    width: 5px;
+    word-wrap: break-word;
+    color: #ccc;
+    font-size: 0.65em;
+    font-weight: 300;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+#ruleY .ruleSegment {
+    height: 50px;
+    background: url('img/ruler-y.jpg') repeat-y;
+    width: 14px;
+    position: relative;
+}
+#ruleY .ruleSlider {
+    margin-top: -5px;
+    height: 10px;
+    width: 8px;
+    background: #18a4aa;
+    position: relative;
+}
+#ruleY .ruleSlider:after {
+    position: absolute;
+    content: '';
+    display: block;
+    border: 5px solid transparent;
+    border-left: 6px solid #18a4aa;
+    top: 0px;
+    left: 8px;
+}
+#ruleY .ruleSliderWrap, #ruleY .ruleMarkWrap {
+    height: 0px;
+    overflow: visible;
+    position: relative;
+}
+#ruleY .ruleSlider span {
+    height: 1px;
+    width: 10000px;
+    background: #18a4aa;
+    top: 5px;
+    display: block;
+    position: relative;
+}
+
+#ruleY .ruleSegments {
+    position: relative;
+    top: 13px;
+}
+
+#ruleX {
+    margin-left: -1000px;
+    width: 4000px;
+    height: 14px;
+    background: #999;
+}
+#ruleX .ruleSegments {
+    width: 10000px;
+    height: 0;
+}
+#ruleX .ruleSegment {
+    width: 50px;
+    float: left;
+    background: url('img/ruler.jpg') repeat-x;
+    height: 14px;
+    position: relative;
+}
+#ruleX .ruleSegment span {
+    color: #ccc;
+    font-size: 0.65em;
+    font-weight: 300;
+    position: absolute;
+    left: 3px;
+    top: 2px;
+}
+#ruleX .ruleSlider,
+#ruleX .ruleMark {
+    margin-left: -5px;
+    height: 8px;
+    width: 10px;
+    background: #18a4aa;
+    position: relative;
+}
+
+#ruleX .ruleSlider:after,
+#ruleX .ruleMark:after {
+    position: absolute;
+    content: '';
+    display: block;
+    border: 5px solid transparent;
+    border-top: 6px solid #18a4aa;
+    top: 8px;
+    left: 0px;
+}
+#ruleX .ruleSlider:after {
+    top: 8px;
+}
+#ruleX .ruleSlider span {
+    display: block;
+    height: 10000px;
+    width: 1px;
+    background: #18a4aa;
+    position: relative;
+    margin: -14px auto;
+}
+#ruleX .ruleSliderWrap, #ruleX .ruleMarkWrap {
+    width: 0px;
+    overflow: visible;
+    float: left;
+    position: relative;
+}
+
+#ruleX:before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 14px;
+    background: #252529;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

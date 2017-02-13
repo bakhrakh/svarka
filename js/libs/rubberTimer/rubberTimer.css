@@ -1,0 +1,67 @@
+.rubberTimer {
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.rubberTimer span {
+    display: block;
+}
+.rubberTimer .timerRow {
+    display: table-cell;
+    vertical-align: middle;
+}
+.rubberTimer .timerWrap {
+    display: table;
+    width: 100%;
+}
+.rubberTimer .timerWrap .timerGroup {
+    display: table-cell;
+}
+.rubberTimer .timerWrap .timerS {
+    display: table-cell;
+    vertical-align: top;
+}
+.rubberTimer .timerWrap .numbersGroup {
+    display: table;
+    width: 100%;
+}
+.rubberTimer .timerWrap .numbersGroup div {
+    display: table-cell;
+}
+.rubberTimer .timerWrap .timerN {
+    padding: 1%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../../../img/timer/bg.png);
+    background-position: 50%;
+}
+
+.hideSeconds .timerS-s,
+.hideSeconds .timer-S {
+    display: none !important;
+}
+
+.hideMinutes .timerS-m,
+.hideMinutes .timer-M {
+    display: none !important;
+}
+
+.hideHours .timerS-h,
+.hideHours .timer-H {
+    display: none !important;
+}
+
+.hideDays .timerS-h,
+.hideDays .timer-D {
+    display: none !important;
+}
+.hideDays.hideHours .timerS-m,
+.hideMinutes.hideHours.hideDays .timerS-s {
+    display: none !important;
+}
+.hideDescription span {
+    display: none !important;
+}

@@ -1,0 +1,44 @@
+.tab_section {
+    position: relative;
+}
+
+.lp_tabs {
+    position: relative;
+}
+
+.lp_tabs .tabs_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/*.lp_tabs .tabs_content .lp_blockcontainercontent {*/
+.lp_tabs .tabs_content .tab_section {
+    display: none !important;
+}
+/*.lp_tabs .tabs_content .lp_blockcontainercontent.selected {*/
+.lp_tabs .tabs_content .tab_section.selected {
+    display: block !important;
+}
+
+.lp_tabs .tabLabel {
+    float: left;
+}
+
+.lp_tabs .tablist:before,
+.lp_tabs .tablist:after {
+   content: '';
+   display: table;
+}
+    
+.lp_tabs .tablist:after {
+   content: '';
+   display: table;
+   clear: both;
+}
+/*
+.tab_section.empty {
+    background: rgba(29, 166, 172, 0.06);
+    border: 1px dashed #4bbcc0;
+}
+*/
